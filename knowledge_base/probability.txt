@@ -1,0 +1,44 @@
+PROBABILITY FORMULAS AND CONCEPTS
+
+1. Basic Probability:
+   P(A) = (Number of favorable outcomes) / (Total outcomes)
+   0 <= P(A) <= 1
+   P(A') = 1 - P(A)  [complement rule]
+
+2. Addition Rule:
+   P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+   If A and B are mutually exclusive: P(A ∪ B) = P(A) + P(B)
+
+3. Multiplication Rule:
+   P(A ∩ B) = P(A) * P(B|A)  [conditional]
+   If A and B are independent: P(A ∩ B) = P(A) * P(B)
+
+4. Conditional Probability:
+   P(A|B) = P(A ∩ B) / P(B)
+
+5. Bayes' Theorem:
+   P(A|B) = P(B|A) * P(A) / P(B)
+
+6. Permutations and Combinations:
+   nPr = n! / (n - r)!   [order matters]
+   nCr = n! / (r! * (n - r)!)   [order doesn't matter]
+   nCr = nC(n-r)
+
+7. Binomial Distribution:
+   P(X = k) = nCk * p^k * (1-p)^(n-k)
+   Mean = np
+   Variance = np(1-p)
+
+8. Expected Value:
+   E(X) = sum of [x * P(x)] for all x
+
+9. Common Mistakes:
+   - Confusing P(A|B) with P(B|A)
+   - Forgetting to subtract P(A ∩ B) in addition rule
+   - Mixing up permutation vs combination
+   - Sampling with/without replacement changes independence
+
+10. Sample Space Tips:
+    - Tossing 2 coins: {HH, HT, TH, TT} → 4 outcomes
+    - Rolling 2 dice: 6*6 = 36 outcomes
+    - Cards: 52 total, 4 suits of 13 each

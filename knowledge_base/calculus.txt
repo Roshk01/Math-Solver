@@ -1,0 +1,53 @@
+CALCULUS - LIMITS, DERIVATIVES, OPTIMIZATION
+
+1. LIMITS:
+   Basic Rules:
+   lim[x→a] c = c  (constant)
+   lim[x→a] x = a
+   lim[x→a] [f(x) + g(x)] = lim f(x) + lim g(x)
+   lim[x→a] [f(x) * g(x)] = lim f(x) * lim g(x)
+
+   Important Limits:
+   lim[x→0] sin(x)/x = 1
+   lim[x→0] (1 - cos(x))/x = 0
+   lim[x→∞] (1 + 1/x)^x = e
+   lim[x→0] (e^x - 1)/x = 1
+   lim[x→0] ln(1 + x)/x = 1
+
+   L'Hôpital's Rule (for 0/0 or ∞/∞ forms):
+   lim f(x)/g(x) = lim f'(x)/g'(x)
+
+2. DERIVATIVES:
+   Basic Rules:
+   d/dx [c] = 0
+   d/dx [x^n] = n*x^(n-1)  [power rule]
+   d/dx [e^x] = e^x
+   d/dx [ln(x)] = 1/x
+   d/dx [sin(x)] = cos(x)
+   d/dx [cos(x)] = -sin(x)
+   d/dx [tan(x)] = sec^2(x)
+
+   Chain Rule: d/dx [f(g(x))] = f'(g(x)) * g'(x)
+   Product Rule: d/dx [f*g] = f'g + fg'
+   Quotient Rule: d/dx [f/g] = (f'g - fg') / g^2
+
+3. OPTIMIZATION (Finding max/min):
+   Step 1: Find f'(x)
+   Step 2: Set f'(x) = 0, solve for x (critical points)
+   Step 3: Find f''(x)
+   - If f''(x) < 0: local maximum
+   - If f''(x) > 0: local minimum
+   Step 4: Check boundary conditions if given interval
+
+4. INTEGRATION (Basic):
+   ∫ x^n dx = x^(n+1)/(n+1) + C  (n ≠ -1)
+   ∫ e^x dx = e^x + C
+   ∫ 1/x dx = ln|x| + C
+   ∫ sin(x) dx = -cos(x) + C
+   ∫ cos(x) dx = sin(x) + C
+
+5. Common Mistakes:
+   - Forgetting chain rule for composite functions
+   - Not checking second derivative for max/min
+   - Forgetting +C in indefinite integrals
+   - 0/0 form needs L'Hôpital or factoring, not direct substitution

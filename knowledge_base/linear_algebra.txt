@@ -1,0 +1,49 @@
+LINEAR ALGEBRA BASICS
+
+1. MATRICES:
+   Addition: Add element by element (same size only)
+   Scalar Multiplication: Multiply every element by scalar
+   Matrix Multiplication: (A*B)[i][j] = sum of row_i of A * col_j of B
+   Note: A*B ≠ B*A in general
+
+2. DETERMINANT:
+   2x2 matrix [[a,b],[c,d]]:
+   det = ad - bc
+
+   3x3 matrix - expand along first row:
+   det = a(ei - fh) - b(di - fg) + c(dh - eg)
+
+   Properties:
+   - det(AB) = det(A) * det(B)
+   - det(A^T) = det(A)
+   - If two rows are equal, det = 0
+   - det = 0 means matrix is singular (not invertible)
+
+3. INVERSE OF A MATRIX:
+   2x2 inverse of [[a,b],[c,d]] = (1/det) * [[d,-b],[-c,a]]
+   A matrix is invertible only if det ≠ 0
+   A * A^(-1) = I (Identity matrix)
+
+4. EIGENVALUES AND EIGENVECTORS:
+   Av = λv  (v is eigenvector, λ is eigenvalue)
+   Find eigenvalues: det(A - λI) = 0
+   Then find eigenvectors by solving (A - λI)v = 0
+
+5. SYSTEM OF LINEAR EQUATIONS:
+   AX = B
+   Solution: X = A^(-1) * B (if A is invertible)
+   
+   Cramer's Rule:
+   x = det(Ax)/det(A), y = det(Ay)/det(A)
+   where Ax = matrix A with first column replaced by B
+
+6. RANK AND LINEAR INDEPENDENCE:
+   Rank = number of non-zero rows after row reduction
+   Vectors are linearly independent if no one can be written 
+   as a combination of others
+
+7. Common Mistakes:
+   - Matrix multiplication is NOT commutative
+   - Only square matrices can have determinants
+   - Inverse only exists when det ≠ 0
+   - (AB)^(-1) = B^(-1) * A^(-1), not A^(-1) * B^(-1)

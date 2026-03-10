@@ -1,0 +1,61 @@
+SOLUTION TEMPLATES AND COMMON PITFALLS
+
+=== SOLUTION TEMPLATES ===
+
+TEMPLATE 1: Solving Quadratic Equations
+Step 1: Write in standard form ax^2 + bx + c = 0
+Step 2: Try factoring first (faster)
+Step 3: If can't factor, use quadratic formula
+Step 4: Check discriminant for number of solutions
+Step 5: Verify answers by substituting back
+
+TEMPLATE 2: Probability Problems
+Step 1: Identify total sample space
+Step 2: Identify favorable outcomes
+Step 3: Check if events are independent or dependent
+Step 4: Apply correct formula (addition/multiplication rule)
+Step 5: Sanity check: answer must be between 0 and 1
+
+TEMPLATE 3: Optimization Problems
+Step 1: Define the objective function f(x)
+Step 2: Identify constraints (domain of x)
+Step 3: Find f'(x) and set = 0
+Step 4: Find critical points
+Step 5: Use second derivative test
+Step 6: Compare with boundary values
+
+TEMPLATE 4: Limit Problems
+Step 1: Try direct substitution first
+Step 2: If 0/0 or ∞/∞, use L'Hôpital's rule or factoring
+Step 3: For trig limits, use standard limits (sin(x)/x = 1)
+Step 4: For limits at infinity, divide by highest power
+
+=== COMMON PITFALLS ===
+
+PITFALL 1: Sign errors in algebraic manipulation
+   Wrong: -(a - b) = -a - b
+   Right: -(a - b) = -a + b
+
+PITFALL 2: Domain restrictions
+   - sqrt(x) requires x >= 0
+   - log(x) requires x > 0
+   - 1/x requires x ≠ 0
+   - tan(x) undefined at x = π/2 + nπ
+
+PITFALL 3: Exponent rules
+   Wrong: a^m * b^m = (ab)^2m
+   Right: a^m * b^m = (ab)^m
+   Wrong: (a^m)^n = a^(m+n)
+   Right: (a^m)^n = a^(mn)
+
+PITFALL 4: Probability > 1
+   If you get P > 1, you made an error. 
+   Probability is always between 0 and 1.
+
+PITFALL 5: Calculus - Chain rule forgotten
+   Wrong: d/dx[sin(3x)] = cos(3x)
+   Right: d/dx[sin(3x)] = 3cos(3x)
+
+PITFALL 6: Matrix multiplication order
+   AB ≠ BA in most cases
+   Always check dimensions: (m×n) * (n×p) = (m×p)
